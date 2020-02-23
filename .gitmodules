@@ -1,0 +1,3 @@
+[submodule "src/main/java/ca/cjloewen/base"]
+	path = src/main/java/ca/cjloewen/base
+	url = https://github.com/cloewen8/MBM.git
