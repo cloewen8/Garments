@@ -29,3 +29,12 @@ Starting a pull request is the most direct way you can contribute and the fastes
   `if (true) {`
 - Build on existing classes in ca.cjloewen.base when applicable.
 - Changes to the base package should be requested separately under these same guidelines (https://github.com/cloewen8/MBM).
+
+### Gameplay
+Although exceptions can be made. I will generally follow these opinions.
+
+- Features should not decrease gameplay potential. Example: Creating diamonds over time instead of mining.
+- The mod should convey how to do everything possible eventually.
+- It is better to show the user what they can do over telling them what to do.
+- Time is not difficulty. Example: Sheering sheep is easy, even though it takes a lot of time.
+- All senses should be used to create an immersive experience.
