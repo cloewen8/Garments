@@ -60,6 +60,97 @@ The only changes are to replace some Trove collection types with standard Java c
 =========================================================================
 
 
+Unless noted otherwise, the Mod is licensed under the Minecraft Mod Public License below.
+This license is a derivative of BDew's Minecraft Mod Public License, available at https://bdew.net/minecraft-mod-public-license/.
+This derived license is licensed by Colton Loewen under the Creative Commons Attribution-ShareAlike 4.0 International License
+(https://creativecommons.org/licenses/by-sa/4.0/).
+
+Minecraft Mod Public License
+============================
+Version 1.0.1-derived-1
+
+0. Definitions
+--------------
+
+Minecraft: Denotes a copy of the game Minecraft licensed by Mojang AB.
+
+User: Anybody that interacts with Minecraft by:
+
+- playing,
+- decompiling,
+- recompiling or compiling,
+- modifing,
+- or distributing it.
+
+Client: A session of Minecraft in which the User plays alone.
+
+Server: A session of Minecraft in which Users connect to a server to play.
+
+Mod: The mod code designated by the present license, in source form, binary
+form, as obtained standalone, as part of a wider distribution or resulting from
+the compilation of the original or modified sources.
+
+Mod Pack: A collection of mods designed to be used together.
+
+Dependency: Code required for the Mod to work properly. This includes
+dependencies required to compile the code as well as any file or modification
+that is explicitely or implicitely required for the Mod to work.
+
+1. Scope
+--------
+
+The present license is granted to any user of the mod. As a prerequisite,
+a user must own a legally acquired copy of Minecraft.
+
+2. Liability
+------------
+
+The Mod is provided 'as is' with no warranties, implied or otherwise. The owner
+of the Mod takes no responsibility for any damages incurred from the use of
+the Mod. The Mod alters fundamental parts of Minecraft. Parts of
+Minecraft may not work with the Mod installed. All damages caused from the use
+of or misuse of the Mod fall on the user.
+
+3. Play rights
+--------------
+
+The User is permitted to install the Mod on Clients and Servers and to play
+without restriction.
+
+4. Modification rights
+----------------------
+
+The User has the right to decompile and modify the Mod and original source code.
+
+5. Derivation rights
+--------------------
+
+The User has the rights to derive code from the Mod, that is to say to
+write code that extends or instanciate the mod classes or interfaces, refer to
+its objects, or calls its functions. This code is known as "derived" code, and
+can be licensed under a license different from the Mod.
+
+6. Distribution of original or modified copy rights
+---------------------------------------------------
+
+Distribution rights govern the Mod in various forms, including:
+
+- original binary or source forms of the Mod,
+- modified versions of these binaries or source files as permitted by section 4,
+as well as binaries resulting from source modifications,
+- patches to its source or binary files,
+- and any copy of a portion of the Mod in binary or source form.
+
+The User is not permitted to redistribute the Mod unless permitted otherwise.
+
+You are permitted to distribute copies of the Mod through a Server for the
+express purpose of allowing play in the specified server only.
+
+You may distribute the Mod in binary form with other mods in a Mod Pack,
+granted you properly link to the original Mod source and provide clear
+attribution with the Mod Pack.
+
+
                   GNU LESSER GENERAL PUBLIC LICENSE
                        Version 2.1, February 1999
 
