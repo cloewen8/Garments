@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "garments:item/wool_pick_brush"
+    }
+}
