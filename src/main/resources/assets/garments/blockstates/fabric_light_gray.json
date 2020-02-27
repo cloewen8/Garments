@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "": [
+            { "model": "garments:blocks/fabric_light_gray" },
+            { "model": "garments:blocks/fabric_light_gray", "x": 90 },
+            { "model": "garments:blocks/fabric_light_gray", "x": 180 },
+            { "model": "garments:blocks/fabric_light_gray", "x": 270 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 90 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 90, "x": 90 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 90, "x": 180 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 90, "x": 270 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 180 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 180, "x": 90 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 180, "x": 180 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 180, "x": 270 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 270 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 270, "x": 90 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 270, "x": 180 },
+            { "model": "garments:blocks/fabric_light_gray", "y": 270, "x": 270 }
+        ]
+    }
+}
