@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.15.2-0.0.0'
+version = '1.15.2-1.1.0'
 group = 'ca.cjloewen.garments'
 archivesBaseName = 'garments'
 
@@ -28,7 +28,8 @@ minecraft {
     mappings channel: 'snapshot', version: '20190719-1.14.3'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
-    accessTransformer = file('src/main/resources/META-INF/garments_at.cfg')
+    // Won't be using access transformers until they are far better documented and reliable.
+    //accessTransformer = file('src/main/resources/META-INF/garments_at.cfg')
 
     // Default run configurations.
     runs {
@@ -113,7 +114,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-        	"FMLAT": "garments_at.cfg",
+        	//"FMLAT": "garments_at.cfg",
             "Specification-Title": "garments",
             "Specification-Vendor": "cj",
             "Specification-Version": "1",
