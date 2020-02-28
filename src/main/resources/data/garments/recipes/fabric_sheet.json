@@ -9,6 +9,7 @@
     }
   ],
   "result": {
-    "item": "garments:fabric_sheet"
+    "item": "garments:fabric_sheet",
+    "count": 2
   }
 }
