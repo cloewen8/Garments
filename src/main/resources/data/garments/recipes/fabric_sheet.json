@@ -1,0 +1,14 @@
+{
+  "type": "garments:crafting_tool",
+  "ingredients": [
+    {
+      "item": "minecraft:white_wool"
+    },
+    {
+      "item": "garments:wool_pick_brush"
+    }
+  ],
+  "result": {
+    "item": "garments:fabric_sheet"
+  }
+}

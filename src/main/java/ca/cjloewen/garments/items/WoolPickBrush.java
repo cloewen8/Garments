@@ -11,6 +11,8 @@ public class WoolPickBrush extends ToolItem {
 	public static final String NAME = "wool_pick_brush";
 	
 	public WoolPickBrush() {
-		super(3, -2.4f, ItemTier.STONE, new HashSet<Block>(), new Properties().group(Items.GENERAL_GROUP));
+		super(3, -2.4f, ItemTier.STONE, new HashSet<Block>(), new Properties()
+			.group(Items.GENERAL_GROUP)
+			.maxDamage(16));
 	}
 }

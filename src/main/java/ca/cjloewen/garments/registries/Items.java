@@ -2,8 +2,8 @@ package ca.cjloewen.garments.registries;
 
 import ca.cjloewen.base.BaseRegistry;
 import ca.cjloewen.garments.Garments;
-import ca.cjloewen.garments.blocks.Fabric;
 import ca.cjloewen.garments.blocks.Fabric.FabricColor;
+import ca.cjloewen.garments.items.Fabric;
 import ca.cjloewen.garments.items.WoolPickBrush;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -19,6 +19,8 @@ public class Items extends BaseRegistry<Item> {
 	
 	@ObjectHolder(WoolPickBrush.NAME)
 	public static WoolPickBrush WOOL_PICK_BRUSH;
+	@ObjectHolder(Fabric.NAME)
+	public static Fabric FABRIC;
 	
 	public Items() {
 		super(ForgeRegistries.ITEMS, Garments.MODID);
@@ -26,9 +28,10 @@ public class Items extends BaseRegistry<Item> {
 		GENERAL_GROUP = new GeneralItemGroup();
 		// Items.
 		register(WoolPickBrush.NAME, WoolPickBrush.class);
+		register(Fabric.NAME, Fabric.class);
 		// Block items.
-		for (FabricColor color : Fabric.COLORS) {
-			register(Fabric.name + color.name, () -> new ModBlockItem(color.block));
+		for (FabricColor color : ca.cjloewen.garments.blocks.Fabric.COLORS) {
+			register(ca.cjloewen.garments.blocks.Fabric.NAME + color.name, () -> new ModBlockItem(color.block));
 		}
 	}
 	

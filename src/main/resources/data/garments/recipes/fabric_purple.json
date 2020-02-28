@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "item": "garments:fabric_white"
+    }
+  ],
+  "result": {
+    "item": "garments:fabric_purple"
+  }
+}

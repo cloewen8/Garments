@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "garments:fabric_sheet"
+    }
+  },
+  "result": {
+    "item": "garments:fabric_white",
+    "count": 2
+  }
+}

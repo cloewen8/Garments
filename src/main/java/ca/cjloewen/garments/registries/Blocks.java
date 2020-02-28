@@ -14,7 +14,7 @@ public class Blocks extends BaseRegistry<Block> {
 		
 		// Blocks
 		for (FabricColor color : Fabric.COLORS) {
-			register(Fabric.name + color.name, () -> new Fabric(color));
+			register(Fabric.NAME + color.name, () -> new Fabric(color));
 		}
 	}
 	

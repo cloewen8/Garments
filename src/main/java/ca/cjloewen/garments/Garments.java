@@ -6,6 +6,7 @@ import ca.cjloewen.garments.config.ClientConfig;
 import ca.cjloewen.garments.config.ServerConfig;
 import ca.cjloewen.garments.registries.Blocks;
 import ca.cjloewen.garments.registries.Items;
+import ca.cjloewen.garments.registries.Recipes;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod(Garments.MODID)
@@ -21,5 +22,6 @@ public class Garments extends BaseMod {
 		CONFIGS = new ConfigHolder<ClientConfig, ServerConfig>(new ClientConfig(), new ServerConfig()).register();
 		BLOCKS = (Blocks) new Blocks().register();
 		ITEMS = (Items) new Items().register();
+		new Recipes().register();
 	}
 }

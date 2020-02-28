@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:orange_dye"
+    },
+    {
+      "item": "garments:fabric_white"
+    },
+    {
+      "item": "garments:fabric_white"
+    },
+    {
+      "item": "garments:fabric_white"
+    },
+    {
+      "item": "garments:fabric_white"
+    },
+    {
+      "item": "garments:fabric_white"
+    },
+    {
+      "item": "garments:fabric_white"
+    },
+    {
+      "item": "garments:fabric_white"
+    },
+    {
+      "item": "garments:fabric_white"
+    }
+  ],
+  "result": {
+    "item": "garments:fabric_orange",
+    "count": 8
+  }
+}

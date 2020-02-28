@@ -8,7 +8,7 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class Fabric extends Block {
-	public static final String name = "fabric_";
+	public static final String NAME = "fabric_";
 	public static final FabricColor[] COLORS = {
 		new FabricColor("white", MaterialColor.SNOW),
 		new FabricColor("orange", MaterialColor.ADOBE),

@@ -28,7 +28,7 @@ minecraft {
     mappings channel: 'snapshot', version: '20190719-1.14.3'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+    accessTransformer = file('src/main/resources/META-INF/garments_at.cfg')
 
     // Default run configurations.
     runs {
@@ -113,6 +113,7 @@ dependencies {
 jar {
     manifest {
         attributes([
+        	"FMLAT": "garments_at.cfg",
             "Specification-Title": "garments",
             "Specification-Vendor": "cj",
             "Specification-Version": "1",
