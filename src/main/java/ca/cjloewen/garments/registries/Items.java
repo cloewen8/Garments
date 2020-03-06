@@ -5,6 +5,7 @@ import ca.cjloewen.garments.Garments;
 import ca.cjloewen.garments.blocks.Fabric.FabricColor;
 import ca.cjloewen.garments.items.Fabric;
 import ca.cjloewen.garments.items.WoolPickBrush;
+import ca.cjloewen.garments.items.garments.Underwear;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -21,6 +22,8 @@ public class Items extends BaseRegistry<Item> {
 	public static WoolPickBrush WOOL_PICK_BRUSH;
 	@ObjectHolder(Fabric.NAME)
 	public static Fabric FABRIC;
+	@ObjectHolder(Underwear.NAME)
+	public static Underwear UNDERWEAR;
 	
 	public Items() {
 		super(ForgeRegistries.ITEMS, Garments.MODID);
@@ -29,6 +32,7 @@ public class Items extends BaseRegistry<Item> {
 		// Items.
 		register(WoolPickBrush.NAME, WoolPickBrush.class);
 		register(Fabric.NAME, Fabric.class);
+		register(Underwear.NAME, Underwear.class);
 		// Block items.
 		for (FabricColor color : ca.cjloewen.garments.blocks.Fabric.COLORS) {
 			register(ca.cjloewen.garments.blocks.Fabric.NAME + color.name, () -> new ModBlockItem(color.block));
@@ -45,7 +49,7 @@ public class Items extends BaseRegistry<Item> {
 
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(WOOL_PICK_BRUSH);
+			return new ItemStack(UNDERWEAR);
 		}
 	}
 	
