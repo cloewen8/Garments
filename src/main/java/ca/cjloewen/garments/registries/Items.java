@@ -8,9 +8,13 @@ import ca.cjloewen.garments.items.WoolPickBrush;
 import ca.cjloewen.garments.items.garments.Underwear;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.IDyeableArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.client.event.ColorHandlerEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ObjectHolder;
 
@@ -27,6 +31,7 @@ public class Items extends BaseRegistry<Item> {
 	
 	public Items() {
 		super(ForgeRegistries.ITEMS, Garments.MODID);
+		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 		// Item groups.
 		GENERAL_GROUP = new GeneralItemGroup();
 		// Items.
@@ -37,6 +42,13 @@ public class Items extends BaseRegistry<Item> {
 		for (FabricColor color : ca.cjloewen.garments.blocks.Fabric.COLORS) {
 			register(ca.cjloewen.garments.blocks.Fabric.NAME + color.name, () -> new ModBlockItem(color.block));
 		}
+	}
+	
+	@SubscribeEvent
+	public void onHandleItemColors(ColorHandlerEvent.Item event) {
+		event.getItemColors().register((stack, tintIndex) -> {
+			return tintIndex > 0 ? -1 : ((IDyeableArmorItem)stack.getItem()).getColor(stack);
+		}, Items.UNDERWEAR);
 	}
 	
 	/**
