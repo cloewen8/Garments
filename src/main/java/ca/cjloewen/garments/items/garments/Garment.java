@@ -7,8 +7,9 @@ public abstract class Garment extends Item {
 	// TODO Lots (a lot based on ArmorItem)!
 	// - Damage over time.
 	// - Dispenser behavior.
-	// - Repair with fabric (damage slowly applied while moving, extra when diving or burning)
-	// - Equip on right click
+	// - Repair with fabric (damage slowly applied while moving, extra when diving or burning).
+	// - Equip on right click.
+	// - Make garments dyable.
 	
 	public final GarmentSlotType slot;
 	
