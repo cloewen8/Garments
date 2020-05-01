@@ -18,5 +18,6 @@
 	"block.garments.fabric_green": "Green Fabric",
 	"block.garments.fabric_red": "Red Fabric",
 	"block.garments.fabric_black": "Black Fabric",
-	"itemGroup.garments": "Garments"
+	"itemGroup.garments": "Garments",
+	"key.garments_inv": "Open/Close Garments Inventory"
 }
