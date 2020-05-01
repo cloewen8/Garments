@@ -1,5 +1,7 @@
 package ca.cjloewen.garments.registries;
 
+import ca.cjloewen.garments.gui.InventoryScreen;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.client.util.InputMappings;
 import net.minecraftforge.client.event.InputEvent.KeyInputEvent;
@@ -20,7 +22,13 @@ public class KeyBindings {
 	@SubscribeEvent
 	public void onInput(KeyInputEvent event) {
 		if (GARMENTS_INV_KEY.isPressed()) {
-			
+			Minecraft mc = Minecraft.getInstance();
+			InventoryScreen inventory = InventoryScreen.getInstance();
+			if (mc.currentScreen != inventory) {
+				mc.getTutorial().openInventory();
+				mc.displayGuiScreen(inventory);
+			} else
+				mc.player.closeScreen();
 		}
 	}
 }

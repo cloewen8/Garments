@@ -4,6 +4,7 @@ import ca.cjloewen.base.BaseMod;
 import ca.cjloewen.base.ConfigHolder;
 import ca.cjloewen.garments.config.ClientConfig;
 import ca.cjloewen.garments.config.ServerConfig;
+import ca.cjloewen.garments.gui.InventoryScreen;
 import ca.cjloewen.garments.registries.Blocks;
 import ca.cjloewen.garments.registries.Items;
 import ca.cjloewen.garments.registries.KeyBindings;
@@ -32,6 +33,7 @@ public class Garments extends BaseMod {
 	
 	@SubscribeEvent
 	public void onClientSetup(FMLClientSetupEvent event) {
+		InventoryScreen.register();
 		new KeyBindings().register();
 	}
 }
